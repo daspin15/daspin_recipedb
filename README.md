@@ -1,2 +1,2 @@
-# daspin_recipedb
-Sprint1-Recipe
+# david_recipes
+ david-recipe_db
