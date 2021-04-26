@@ -2,3 +2,7 @@ label.print{
   font-style: italic;
   font-weight: bold;
 }
+
+.nav-link{
+  color: orange;
+}
