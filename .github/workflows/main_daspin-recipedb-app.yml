@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'daspin-recipedb-app'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_36231b67a7014d3985d2660794e75c9e }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_9088518d006149479b6627596255a711 }}
