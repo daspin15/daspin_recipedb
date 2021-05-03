@@ -10,13 +10,14 @@
 <div class="admin_left">
     <h3 >Food Categories</h3>
     <form method='POST' action="{{url_for('add_category')}}">
-        <input type="text" name="new_category" placeholder="add new category"><input type="submit" value="Submit">
+        <label for="new_category">Add Category: </label>
+        <input id="new_category" type="text" name="new_category" placeholder="add new category"><input type="submit" value="Submit">
     </form>
     <hr>
 
         {% for category in all_categories %}
     <p><a
-        href="{{ (url_for('delete_category', category_id=category['_id'])) }}"><img src="{{ url_for('static', filename='icons/delete.png') }}"></a>
+        href="{{ (url_for('delete_category', category_id=category['_id'])) }}"><img src="{{ url_for('static', filename='icons/delete.png') }}" alt="Delete Category"></a>
         &nbsp;{{ category.category_name }} </p>
         {% endfor %}
         <br clear="all">
