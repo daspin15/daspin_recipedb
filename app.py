@@ -112,7 +112,8 @@ def index():
     #return render_template('index.html', all_recipes=recipes.find({"date_added": {"$gt": today - timedelta}}))
 
     # unauthenticated users can see the 10 newest recipes in the database
-    return render_template('index.html', all_recipes=recipes.find().sort([("_id", -1)]).limit(10)) #sort newest first, limit to 10 records returned
+    return render_template("about.html")
+    #return render_template('index.html', all_recipes=recipes.find().sort([("_id", -1)]).limit(10)) #sort newest first, limit to 10 records returned
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
